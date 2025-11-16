@@ -1,11 +1,9 @@
 import { useState } from 'react'
 
-// 单个按钮
 const Button = ({ onClick, text }) => {
   return <button onClick={onClick}>{text}</button>
 }
 
-// 单行统计：返回一行 <tr>
 const StatisticLine = ({ text, value }) => {
   return (
     <tr>
@@ -15,7 +13,6 @@ const StatisticLine = ({ text, value }) => {
   )
 }
 
-// 统计组件
 const Statistics = ({ good, neutral, bad }) => {
   const all = good + neutral + bad
 
